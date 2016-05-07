@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN" ng-app="blogApp">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1"/>
+    <meta name="renderer" content="webkit">
+    <meta name="author" content="我的名字">
+    <meta name="description" content="项目描述">
+    <title>项目标题</title>
+    <link rel="stylesheet" href="./static/stylesheets/typo.css">
+    <link rel="stylesheet" href="./static/iconfont/iconfont.css">
+    <link rel="stylesheet" href="./components/highlight/src/styles/obsidian.css"/>
+    <link rel="stylesheet" href="./static/stylesheets/style.css">
+</head>
+<body ng-controller="blogController">
+<!-- 侧边栏 -->
+<div class="section-sidebar">
+    <div class="avator-wrap">
+        <a href="/app/index.html#/index"><img src="./static/images/avator.jpeg" alt=""></a>
+    </div>
+    <h1 class="sidebar-title">Blogmore</h1>
+    <p class="sidebar-title-desc">一个文章目录生成器，Make Fun！</p>
+    <div class="category-panel">
+        <p class="category-title">分类目录</p>
+        <ui class="category-list">
+            <li ng-repeat="category in dataCat.category track by $index">
+                <a href="javascript:void(0)" ng-click="jumpToCat(category)"><span ng-bind="category"></span></a>
+            </li>
+        </ui>
+    </div>
+    <div class="category-panel">
+        <p class="category-title">时间分类目录</p>
+        <ui class="category-list">
+            <li ng-repeat="dateObj in dataCat.datesObjArr track by $index">
+                <a href="javascript:void(0)" ng-click="jumpToDate(dateObj)"><span ng-bind="dateObj.year"></span>年<span ng-bind="dateObj.month"></span>月</a>
+            </li>
+        </ui>
+    </div>
+</div>
+<!-- 侧边栏 end -->
+
+<!-- 主内容区 -->
+<div class="section-content clearfix">
+    <div ng-view ng-class="{'typo typo-markdown': isArticle}"></div>
+</div>
+<!-- 主内容区 end -->
+
+<script src="./components/jquery/dist/jquery.min.js"></script>
+<script src="./components/angular/angular.min.js"></script>
+<script src="./components/angular-route/angular-route.min.js"></script>
+<script src="./components/moment/min/moment-with-locales.min.js"></script>
+<script src="http://apps.bdimg.com/libs/highlight.js/9.1.0/highlight.min.js"></script>
+<script src="http://apps.bdimg.com/libs/highlight.js/9.1.0/languages/1c.min.js"></script>
+<script src="./static/javascripts/global.js"></script>
+</body>
+</html>

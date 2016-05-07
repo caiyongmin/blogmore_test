@@ -1,0 +1,238 @@
+/* common css */
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html,body {
+    position: relative;
+    background-color: #ecf0f1;
+}
+
+img {
+    width: 100%;
+}
+
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+
+/* common css */
+
+/* sidebar css */
+.section-sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 300px;
+    background-color: #1abc9c;
+    overflow: auto;
+}
+
+.section-sidebar .avator-wrap {
+    width: 115px;
+    height: 115px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.section-sidebar .avator-wrap img {
+    border: 5px solid #fff;
+    border-radius: 50%;
+}
+
+.sidebar-title {
+    text-align: center;
+    text-shadow: 0 1px 0 #eee;
+}
+
+.sidebar-title-desc {
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.section-sidebar .category-panel {
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.section-sidebar .category-title {
+}
+
+.section-sidebar .category-list {
+}
+
+.section-sidebar .category-list li {
+}
+
+.section-sidebar .category-list li a {
+    color: #eee;
+}
+
+.section-sidebar .category-list li a:hover {
+}
+
+/* sidebar css */
+
+/* content css */
+.section-content {
+    margin-left: 300px;
+    color: #666;
+}
+
+.article-list {
+}
+
+.article-item {
+    position: relative;
+    margin: 30px;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+.article-header {
+    padding-top: 15px;
+}
+
+.article-title {}
+.article-title a {
+    display: block;
+    height: 40px;
+    padding-left: 14px;
+    border-left: 6px solid #16a085;
+    font-weight: 700;
+    color: #333;
+    line-height: 38px;
+}
+.article-title a:hover {
+    text-decoration: none;
+    opacity: .8;
+}
+.article-date {
+    padding-right: 20px;
+}
+
+.article-date .icon-date {
+    font-size: 18px;
+    padding-right: 3px;
+}
+
+.article-body {
+    padding: 0 20px;
+    margin-top: 20px;
+}
+
+.article-footer {
+    font-size: 14px;
+    padding: 18px 0 12px;
+    border-top: 1px solid #ddd;
+    margin: 30px 20px 0;
+}
+
+.article-category-list {}
+.article-category-info {
+    float: left;
+    height: 18px;
+    line-height: 20px;
+}
+.article-category-list a {
+    position: relative;
+    float: left;
+    height: 18px;
+    line-height: 20px;
+    padding: 0 5px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    margin: 0 14px 0 6px;
+    background-color: #88acdb;
+    color: #fff;
+}
+.article-category-list a:hover {
+    text-decoration: none;
+    opacity: .8;
+}
+.article-category-list a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -18px;
+    width: 0;
+    height: 0;
+    border-width: 9px;
+    border-style: solid;
+    border-color: transparent #88acdb transparent transparent;
+}
+.article-category-list a:after {
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: -2px;
+    width: 4px;
+    height: 4px;
+    border-radius: 4px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .2);
+    background-color: #fff;
+}
+
+.article-more-link {
+    height: 18px;
+    line-height: 20px;
+    font-weight: 700;
+}
+
+/* content css */
+/* article-markdown css */
+.typo-markdown {
+    position: relative;
+    padding: 20px 30px 20px 20px;
+    background-color: #fff;
+    border-radius: 2px;
+    margin: 30px;
+}
+.typo-markdown h2 {
+    font-size: 1.8em;
+}
+.typo-markdown h3 {
+    font-size: 1.4em;
+}
+.typo-markdown p {
+    color: #333;
+}
+.typo-markdown ul li p, .typo-markdown ol li p {
+    margin-bottom: 0;
+}
+.typo-markdown p+ul, .typo-markdown p+ul {
+    margin-bottom: 0.2em;
+}
+.pagination {
+    padding: 10px 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #fff;
+    margin: 0 30px 30px;
+    color: #333;
+    text-align: center;
+}
+
+.pagination .num {
+    display: inline-block;
+    width: 35px;
+    padding: 2px 0;
+    border: 1px solid #ddd;
+    margin: 0 3px;
+    cursor: pointer;
+}
+.pagination .num:hover {
+    opacity: .8;
+}
+.pagination .num.mark {
+    border-color: #3498db;
+    background-color: #3498db;
+    color: #fff;
+}
+
+/* article-markdown css */
