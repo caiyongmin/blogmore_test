@@ -51,6 +51,7 @@ img {
 
 .sidebar-title-desc {
     padding-bottom: 50px;
+    color: #333;
     text-align: center;
 }
 
@@ -60,30 +61,22 @@ img {
 }
 
 .section-sidebar .category-title {
-}
-
-.section-sidebar .category-list {
-}
-
-.section-sidebar .category-list li {
+    color: #333;
 }
 
 .section-sidebar .category-list li a {
     color: #eee;
 }
 
-.section-sidebar .category-list li a:hover {
-}
-
 /* sidebar css */
 
 /* content css */
 .section-content {
-    margin-left: 300px;
     color: #666;
 }
 
 .article-list {
+    margin-left: 300px;
 }
 
 .article-item {
@@ -96,14 +89,11 @@ img {
 .article-header {
     padding-top: 15px;
 }
-
-.article-title {}
 .article-title a {
     display: block;
     height: 40px;
-    padding-left: 14px;
+    padding-left: 17px;
     border-left: 6px solid #16a085;
-    font-weight: 700;
     color: #333;
     line-height: 38px;
 }
@@ -121,18 +111,16 @@ img {
 }
 
 .article-body {
-    padding: 0 20px;
-    margin-top: 20px;
+    padding: 10px 30px 10px 25px;
 }
 
 .article-footer {
     font-size: 14px;
     padding: 18px 0 12px;
     border-top: 1px solid #ddd;
-    margin: 30px 20px 0;
+    margin: 15px 25px 0;
 }
 
-.article-category-list {}
 .article-category-info {
     float: left;
     height: 18px;
@@ -187,13 +175,22 @@ img {
 /* article-markdown css */
 .typo-markdown {
     position: relative;
-    padding: 20px 30px 20px 20px;
+    padding: 20px 30px 20px 25px;
     background-color: #fff;
     border-radius: 2px;
     margin: 30px;
+    color: #333;
+}
+.typo-markdown h1,
+.typo-markdown h2,
+.typo-markdown h3,
+.typo-markdown h4,
+.typo-markdown h5,
+.typo-markdown h6 {
+    color: #333;
 }
 .typo-markdown h2 {
-    font-size: 1.8em;
+    font-size: 1.6em;
 }
 .typo-markdown h3 {
     font-size: 1.4em;
@@ -213,7 +210,7 @@ img {
     -moz-border-radius: 3px;
     border-radius: 3px;
     background-color: #fff;
-    margin: 0 30px 30px;
+    margin: 0 30px 15px 330px;;
     color: #333;
     text-align: center;
 }
